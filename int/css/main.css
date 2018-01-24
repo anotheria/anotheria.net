@@ -11,6 +11,7 @@
 .fixed-header {
   position: fixed;
   transition: all 0.15s linear;
+  z-index: 2;
 }
 
 .window {
@@ -136,6 +137,11 @@
   position: relative;
   padding-left: 80px;
   margin-bottom: 40px;
+}
+
+.about-box .close {
+  color: #000;
+  transition: all 0.15s linear;
 }
 
 .about-box img {
@@ -305,7 +311,7 @@
 }
 
 .section-stories p {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .section-stories:before {
@@ -535,6 +541,7 @@
   width: 30px;
   height: 30px;
   right: -80px;
+  transition: all 0.15s linear;
 }
 
 .about-close:before {
@@ -542,7 +549,7 @@
   content: "";
   width: 30px;
   height: 2px;
-  background: #FFF;
+  background: #000;
   transform: rotate(45deg);
   position: absolute;
   top: 15px;
@@ -554,7 +561,7 @@
   content: "";
   width: 30px;
   height: 2px;
-  background: #FFF;
+  background: #000;
   transform: rotate(-45deg);
   position: absolute;
   top: 15px;
@@ -592,10 +599,10 @@
   width: 994px;
   height: 1019px;
   background: url("../img/ano_bg.png");
-  position: absolute;
+  position: fixed;
   left: 30px;
   bottom: -100px;
-  z-index: 4;
+  z-index: 1;
   background-repeat: no-repeat;
 }
 
@@ -745,7 +752,7 @@
 .stories-carousel .owl-dots {
   position: relative;
   top: -80px;
-  z-index: 5;
+  z-index: 1000;
 }
 
 .owl-carousel {
