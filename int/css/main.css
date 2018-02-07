@@ -622,7 +622,7 @@
 .bottom-box {
   overflow: hidden;
   position: relative;
-  z-index: 3;
+  z-index: 2;
 }
 
 .bottom-box .section {
@@ -794,4 +794,48 @@
 
 .sales-box i {
   margin-left: 10px;
+}
+
+.user-card {
+  background: rgba(255,255,255,0.05);
+  height: 180px;
+  position: relative;
+  padding-left: 190px;
+}
+
+.user-card .user-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 180px;
+  width: 180px;
+  background-size: cover;
+  background-position: center top;
+}
+
+.user-card .social {
+  position: absolute;
+  bottom: 20px;
+  left: 200px;
+}
+
+.user-card .about-user {
+  padding: 20px 10px;
+}
+
+.title-with-sub-text {
+  margin-bottom: 50px;
+}
+
+.title-with-sub-text h2 {
+  margin-bottom: 15px;
+}
+
+.title-with-sub-text .sub-desc {
+  color: #9da5b0;
+}
+
+.user-card .social li a {
+  line-height: 41px;
 }
