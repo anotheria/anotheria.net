@@ -355,6 +355,14 @@
   font-size: 13px;
 }
 
+.footer a {
+  color: #9da5b0;
+}
+
+.footer a:hover {
+  color: #FFF;
+}
+
 .footer p {
   margin-bottom: 0;
 }
@@ -782,4 +790,8 @@
 
 .owl-carousel .owl-stage-outer {
   z-index: 6;
+}
+
+.sales-box i {
+  margin-left: 10px;
 }

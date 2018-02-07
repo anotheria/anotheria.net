@@ -101,6 +101,20 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    .row-padding-60 {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .row-padding-60 > div {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #header.fixed-header, .fixed-header {
+        z-index: 100;
+    }
 }
 @media (max-width: 767px) {
 
