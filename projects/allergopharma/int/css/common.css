@@ -278,12 +278,7 @@ a {
     top: 0; }
     .search-box .search-btn {
       width: 30px;
-      border: none;
-      background-color: transparent;
-      background-image: url("../img/icon-search.png");
-      background-repeat: no-repeat;
-      background-position: left center;
-      background-size: 30px 30px; }
+      border: none; }
       .search-box .search-btn span {
         display: none; }
 
