@@ -35,6 +35,7 @@
       & > a
         border-bottom: 1px solid #1b418b
     & > a
+      text-decoration: none
       &:hover
         text-decoration: none
         border-bottom: 1px solid #1b418b
@@ -54,7 +55,8 @@
   position: absolute
   display: none
 
-  right: 30px
+  left: 0px
+  top: 30px
   .search-btn
     padding: 0
     position: absolute
@@ -111,6 +113,11 @@
 
 .article-box
 
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
   .preview-box
     margin-bottom: 15px
 
@@ -144,9 +151,12 @@
     float: left
     margin-right: 44px
     a
+      text-decoration: none
       font-size: 10px
       color: #000
       letter-spacing: 0.12em
+      &:hover
+        text-decoration: underline
 
 .social-links
   list-style: none
@@ -159,6 +169,7 @@
     a
       color: #9099a8
       font-size: 16px
+      transition: all 0.12s ease-in-out
       &:hover
         color: #000
         text-decoration: none
@@ -180,6 +191,39 @@
 
 .alert-left-side
   float: left
+  max-width: 750px
 
 .alert-right-side
   float: right
+
+.mobile-menu-btn
+  display: inline-block
+  position: relative
+
+  height: 20px
+  width: 30px
+  top: 5px
+  margin-right: 20px
+  cursor: pointer
+  span
+    position: absolute
+    display: block
+    height: 2px
+    width: 30px
+    background: #154198
+    transition: all 0.12s ease-in-out
+    &.mm1
+      top: 0
+      left: 0
+    &.mm2
+      top: 50%
+      margin-top: -1px
+      left: 0
+    &.mm3
+      bottom: 0
+      left: 0
+
+.logo
+  .mobile-menu-btn
+    float: left
+    margin-top: -5px

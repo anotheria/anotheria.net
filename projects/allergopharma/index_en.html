@@ -18,12 +18,11 @@
     <div class="alert line-alert" role="alert">
         <div class="container">
             <p class="alert-left-side">
-                Wir verwenden Cookies. um dos Nutzerverhalten out dieser Website zu verbessern.
-                <br/>Wenn Sie unsere Website weiter nutzen, erklören Sie sich mit der Verwendung der Cookies einverstanden.
+                By browsing, you agree to the use of cookies to analyse how you use our website and help us to make improvements accordingly. <a href="#">Learn more</a>.
             </p>
             <div class="alert-right-side">
                 <button class="btn btn-light" data-dismiss="alert" aria-label="Close">OK</button>
-                <button class="btn btn-light" data-dismiss="alert" aria-label="Close">Mehr Informationen</button>
+                <button class="btn btn-light d-none d-sm-inline" data-dismiss="alert" aria-label="Close">Mehr Informationen</button>
             </div>
         </div>
     </div>
@@ -33,10 +32,20 @@
     <header id="header">
         <div class="container">
             <div class="logo">
+                 <span class="mobile-menu-btn hidden-md-up">
+                    <span class="mm1"></span>
+                    <span class="mm2"></span>
+                    <span class="mm3"></span>
+                </span>
                 <a href="#"><img src="int/img/logo_en.png" alt=""></a>
             </div>
             <ul class="main-menu">
                 <li class="search-li">
+                    <span class="mobile-menu-btn hidden-md-up">
+                        <span class="mm1"></span>
+                        <span class="mm2"></span>
+                        <span class="mm3"></span>
+                    </span>
                     <div class="search-box">
                         <form method="post" class="textsuche floatRight searchform form-inline open" id="tx_indexedsearch" action="https://www.allergopharma.de/suchen/?tx_indexedsearch_pi2%5Bsearch%5D%5Bsword%5D=&amp;tx_indexedsearch_pi2%5Baction%5D=search&amp;tx_indexedsearch_pi2%5Bcontroller%5D=Search">
                             <div>
@@ -66,13 +75,13 @@
                             <input type="hidden" name="tx_indexedsearch_pi2[search][exactCount]" value="1">
 
                             <input class="search-field searchformword form-control" tabindex="-1" type="text" name="tx_indexedsearch_pi2[search][sword]">
-                            <button class="search-btn displaynonejs searchformsubmit form-control" type="submit" name="tx_indexedsearch_pi2[search][submitButton]" value="">OK</button>
+                            <button class="search-btn displaynonejs searchformsubmit form-control" type="submit" name="tx_indexedsearch_pi2[search][submitButton]" value=""><span>OK</span></button>
                         </form>
                     </div>
                     <i class="search-icon"></i>
                 </li>
                 <li class="active dropdown dropdown-hover">
-                    <a href="#">Company</a>
+                    <a href="#" class="main-navigation-item">Allergy<span></span></a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Über uns</a>
                         <a class="dropdown-item" href="#">Engagement</a>
@@ -82,7 +91,7 @@
                     </div>
                 </li>
                 <li class="dropdown dropdown-hover">
-                    <a href="#">Patients</a>
+                    <a href="#" class="main-navigation-item">Our Business<span></span></a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Allergieportal</a>
                         <a class="dropdown-item" href="#">App für Allergiker</a>
@@ -93,7 +102,37 @@
                     </div>
                 </li>
                 <li class="dropdown dropdown-hover">
-                    <a href="#">Healthcare <span class="hide-sm">Professionals</span></a>
+                    <a href="#" class="main-navigation-item">FASIT<span></span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Produkte</a>
+                        <a class="dropdown-item" href="#">Rezepturhinweise</a>
+                        <a class="dropdown-item" href="#">Lexikon der Allergene</a>
+                        <a class="dropdown-item" href="#">Beratung und Bestellung</a>
+                        <a class="dropdown-item" href="#">Servicematerial downloaden</a>
+                        <a class="dropdown-item" href="#">Servicematerial bestellen</a>
+                        <a class="dropdown-item" href="#">Veranstaltungen</a>
+                        <a class="dropdown-item" href="#">Nebenwirkungsmelder</a>
+                        <a class="dropdown-item" href="#">News für Fachkreise</a>
+                        <a class="dropdown-item" href="#">FASIT meets EAACI</a>
+                    </div>
+                </li>
+                <li class="dropdown dropdown-hover">
+                    <a href="#" class="main-navigation-item">Allergopharma Award<span></span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Produkte</a>
+                        <a class="dropdown-item" href="#">Rezepturhinweise</a>
+                        <a class="dropdown-item" href="#">Lexikon der Allergene</a>
+                        <a class="dropdown-item" href="#">Beratung und Bestellung</a>
+                        <a class="dropdown-item" href="#">Servicematerial downloaden</a>
+                        <a class="dropdown-item" href="#">Servicematerial bestellen</a>
+                        <a class="dropdown-item" href="#">Veranstaltungen</a>
+                        <a class="dropdown-item" href="#">Nebenwirkungsmelder</a>
+                        <a class="dropdown-item" href="#">News für Fachkreise</a>
+                        <a class="dropdown-item" href="#">FASIT meets EAACI</a>
+                    </div>
+                </li>
+                <li class="dropdown dropdown-hover">
+                    <a href="#" class="main-navigation-item">News<span></span></a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Produkte</a>
                         <a class="dropdown-item" href="#">Rezepturhinweise</a>
@@ -159,15 +198,16 @@
     <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <img src="int/img/footer_logo.png" class="footer-logo" alt="">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <ul class="footer-nav">
                         <li><a href="https://www.allergopharma.de/home/service/datenschutzerklaerung/">Datenschutzerklärung</a></li>
                         <li><a href="https://www.allergopharma.de/home/service/nutzungsbedingungen/">Nutzungsbedigungen</a></li>
                         <li><a href="https://www.allergopharma.de/home/service/impressum/">Impressum</a></li>
                         <li><a href="https://www.allergopharma.de/home/service/kontakt/">Kontakt</a></li>
+                        <li><a href="https://www.allergopharma.de/home/service/kontakt/">Service</a></li>
                         <li><a href="https://www.allergopharma.de/fachkreise/">Login</a></li>
                     </ul>
                     <ul class="footer-nav">
@@ -198,6 +238,16 @@
     $('.search-icon').click(function(){
         $(this).parent().toggleClass('active');
     });
+
+    $('.mobile-menu-btn').click(function () {
+        $('body').toggleClass('mobile-menu-show');
+    })
+
+    $('.main-navigation-item').click(function () {
+        $(this).closest('li').toggleClass('show-nav');
+        return false
+    })
+
 </script>
 </body>
 </html>

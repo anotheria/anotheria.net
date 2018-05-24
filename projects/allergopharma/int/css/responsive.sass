@@ -41,6 +41,7 @@
 
 
 @media (max-width: 991px)
+
   .main-section
     background-position: left center
 
@@ -50,12 +51,99 @@
       &:first-child
         margin-left: 0
 
-  .search-box
-    right: inherit
-    left: 0
-    top: 30px
+@media (min-width: 767px)
+  .hidden-md-up
+    display: none
+
+  .search-li
+    .mobile-menu-btn
+      display: none
 
 @media (max-width: 767px)
+  .main-menu
+    z-index: 100
+    display: block
+    position: fixed
+    top: 0
+    left: -280px
+    bottom: 0
+    width: 280px
+    background: #FFF
+    margin-bottom: 0
+    padding: 15px
+    transition: all 0.12s ease-in-out
+
+    & > li
+      float: none
+      text-align: left
+      margin-left: 0
+      margin-right: 0
+
+      .dropdown-menu
+        display: none !important
+        position: relative
+        padding-bottom: 15px
+        padding-top: 5px
+        float: none
+        border: none
+        .dropdown-item
+          padding-left: 10px
+          padding-right: 10px
+          padding-top: 5px
+          padding-bottom: 5px
+
+      &.show-nav
+        .dropdown-menu
+          display: block !important
+
+        & > a
+          span
+            transform: rotate(180deg)
+
+      & > a
+        display: block
+        padding-left: 10px
+        padding-right: 10px
+        padding-top: 10px
+        padding-bottom: 10px
+        font-size: 18px
+        border-bottom: 1px solid #1b418b
+        position: relative
+        font-weight: normal
+        padding-right: 40px
+        span
+          transition: all 0.12s ease-in-out
+          position: absolute
+          right: 10px
+          top: 16px
+          width: 15px
+          height: 15px
+          display: inline-block
+          background-color: transparent
+          background-image: url('../img/arrow.png')
+          background-repeat: no-repeat
+          background-position: center center
+          background-size: 15px 10px
+
+
+    .search-li
+      .search-box
+        padding-left: 45px
+        position: relative
+      .mobile-menu-btn
+        display: inline-block
+        position: absolute
+        left: 0
+        top: 4px
+        z-index: 100
+
+  .mobile-menu-show
+    .main-menu
+      left: 0
+
+  .alert-right-side
+    text-align: center
+
   .search-icon
     display: none
 
@@ -69,8 +157,14 @@
     .search-btn
       width: 30px
       border: none
+      background-color: transparent
+      background-image: url('../img/icon-search.png')
+      background-repeat: no-repeat
+      background-position: left -1px
+      background-size: 30px 30px
       span
         display: none
+
 
   .main-section
     height: 400px
@@ -86,18 +180,14 @@
     float: none
     display: inline-block
 
-    li
-      margin-left: 10px
-      margin-right: 10px
-
     li.search-li
       display: block
       float: none
       margin: 0 auto
-      margin-bottom: 10px
+      margin-bottom: 30px
       input
         width: 100%
-        border: 1px solid #DDD
+        border-radius: 0
 
     li:first-child
       margin-left: 0
@@ -141,9 +231,6 @@
     display: none
 
 @media (max-width: 350px)
-  .btn
-    padding-left: 10px
-    padding-right: 10px
 
   .main-section
     h1
