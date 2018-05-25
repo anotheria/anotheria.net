@@ -80,71 +80,24 @@
                     </div>
                     <i class="search-icon"></i>
                 </li>
-                <li class="active dropdown dropdown-hover">
-                    <a href="#" class="main-navigation-item">Allergy<span></span></a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Über uns</a>
-                        <a class="dropdown-item" href="#">Engagement</a>
-                        <a class="dropdown-item" href="#">Verantwortung</a>
-                        <a class="dropdown-item" href="#">International</a>
-                        <a class="dropdown-item" href="#">News</a>
-                    </div>
+                <li class="active">
+                    <a href="https://www.allergopharma.com/allergy/" class="main-navigation-item">Allergy</a>
                 </li>
                 <li class="dropdown dropdown-hover">
                     <a href="#" class="main-navigation-item">Our Business<span></span></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Allergieportal</a>
-                        <a class="dropdown-item" href="#">App für Allergiker</a>
-                        <a class="dropdown-item" href="#">Pollenflug</a>
-                        <a class="dropdown-item" href="#">Servicematerial für Patienten</a>
-                        <a class="dropdown-item" href="#">ALLERGOCOVER</a>
-                        <a class="dropdown-item" href="#">Nebenwirkungsmelder</a>
+                        <a class="dropdown-item" href="#">Allergopharma Worldwide</a>
+                        <a class="dropdown-item" href="#">Our Commitment</a>
                     </div>
                 </li>
-                <li class="dropdown dropdown-hover">
-                    <a href="#" class="main-navigation-item">FASIT<span></span></a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Produkte</a>
-                        <a class="dropdown-item" href="#">Rezepturhinweise</a>
-                        <a class="dropdown-item" href="#">Lexikon der Allergene</a>
-                        <a class="dropdown-item" href="#">Beratung und Bestellung</a>
-                        <a class="dropdown-item" href="#">Servicematerial downloaden</a>
-                        <a class="dropdown-item" href="#">Servicematerial bestellen</a>
-                        <a class="dropdown-item" href="#">Veranstaltungen</a>
-                        <a class="dropdown-item" href="#">Nebenwirkungsmelder</a>
-                        <a class="dropdown-item" href="#">News für Fachkreise</a>
-                        <a class="dropdown-item" href="#">FASIT meets EAACI</a>
-                    </div>
+                <li>
+                    <a href="https://www.allergopharma.com/fasit/" class="main-navigation-item">FASIT</a>
                 </li>
-                <li class="dropdown dropdown-hover">
-                    <a href="#" class="main-navigation-item">Allergopharma Award<span></span></a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Produkte</a>
-                        <a class="dropdown-item" href="#">Rezepturhinweise</a>
-                        <a class="dropdown-item" href="#">Lexikon der Allergene</a>
-                        <a class="dropdown-item" href="#">Beratung und Bestellung</a>
-                        <a class="dropdown-item" href="#">Servicematerial downloaden</a>
-                        <a class="dropdown-item" href="#">Servicematerial bestellen</a>
-                        <a class="dropdown-item" href="#">Veranstaltungen</a>
-                        <a class="dropdown-item" href="#">Nebenwirkungsmelder</a>
-                        <a class="dropdown-item" href="#">News für Fachkreise</a>
-                        <a class="dropdown-item" href="#">FASIT meets EAACI</a>
-                    </div>
+                <li>
+                    <a href="https://www.allergopharma.com/allergopharma-award/" class="main-navigation-item">Allergopharma Award</a>
                 </li>
-                <li class="dropdown dropdown-hover">
-                    <a href="#" class="main-navigation-item">News<span></span></a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Produkte</a>
-                        <a class="dropdown-item" href="#">Rezepturhinweise</a>
-                        <a class="dropdown-item" href="#">Lexikon der Allergene</a>
-                        <a class="dropdown-item" href="#">Beratung und Bestellung</a>
-                        <a class="dropdown-item" href="#">Servicematerial downloaden</a>
-                        <a class="dropdown-item" href="#">Servicematerial bestellen</a>
-                        <a class="dropdown-item" href="#">Veranstaltungen</a>
-                        <a class="dropdown-item" href="#">Nebenwirkungsmelder</a>
-                        <a class="dropdown-item" href="#">News für Fachkreise</a>
-                        <a class="dropdown-item" href="#">FASIT meets EAACI</a>
-                    </div>
+                <li>
+                    <a href="https://www.allergopharma.com/news/" class="main-navigation-item">News</a>
                 </li>
             </ul>
         </div>
@@ -243,7 +196,7 @@
         $('body').toggleClass('mobile-menu-show');
     })
 
-    $('.main-navigation-item').click(function () {
+    $('.dropdown .main-navigation-item').click(function () {
         $(this).closest('li').toggleClass('show-nav');
         return false
     })

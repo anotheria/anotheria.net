@@ -125,23 +125,10 @@
                         <a class="dropdown-item" href="#">FASIT meets EAACI</a>
                     </div>
                 </li>
-                <li class="dropdown dropdown-hover">
-                    <a href="#" class="main-navigation-item">
+                <li>
+                    <a href="https://www.allergopharma.de/karriere/" class="main-navigation-item">
                         Karriere
-                        <span></span>
                     </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Produkte</a>
-                        <a class="dropdown-item" href="#">Rezepturhinweise</a>
-                        <a class="dropdown-item" href="#">Lexikon der Allergene</a>
-                        <a class="dropdown-item" href="#">Beratung und Bestellung</a>
-                        <a class="dropdown-item" href="#">Servicematerial downloaden</a>
-                        <a class="dropdown-item" href="#">Servicematerial bestellen</a>
-                        <a class="dropdown-item" href="#">Veranstaltungen</a>
-                        <a class="dropdown-item" href="#">Nebenwirkungsmelder</a>
-                        <a class="dropdown-item" href="#">News für Fachkreise</a>
-                        <a class="dropdown-item" href="#">FASIT meets EAACI</a>
-                    </div>
                 </li>
             </ul>
         </div>
@@ -241,7 +228,7 @@
         $('body').toggleClass('mobile-menu-show');
     })
 
-    $('.main-navigation-item').click(function () {
+    $('.dropdown .main-navigation-item').click(function () {
         $(this).closest('li').toggleClass('show-nav');
         return false
     })
