@@ -1,0 +1,167 @@
+html
+  height: 100%
+
+body
+  height: 100%
+  background: #FFF
+  font-family: 'Open Sans', sans-serif
+  font-weight: 400
+  font-size: 15px
+  color: #444
+  &.admin .main
+    padding-bottom: 90px
+
+.wrapper
+  min-height: 100%
+  position: relative
+
+.container-lg
+  max-width: 1280px
+  margin: 0 auto
+  padding: 0 15px
+
+.container-feed
+  max-width: inherit
+  padding-left: 200px
+
+a
+  color: #00a9e3
+  -webkit-transition: all 0.1s linear
+  -moz-transition: all 0.1s linear
+  -o-transition: all 0.1s linear
+  transition: all 0.1s linear
+  &.more
+    color: #999
+
+.btn
+  padding: 10px 15px
+  border-radius: 3px
+  &:focus, &:active:focus, &.active:focus
+    outline: none
+
+.btn
+  transition: all .12s linear
+
+.btn.btn-lg
+  padding: 12px 30px
+  font-size: 16px
+
+.btn-light
+  color: #777
+  &:hover
+    color: #333
+    background: #faeddd
+    border-color: #faeddd
+
+.btn-success
+  background: #53cb83
+  border-color: #53cb83
+  &:hover
+    background: #43bf74
+    border-color: #43bf74
+  &:active
+    background: #39b269
+    border-color: #39b269
+  &:active:focus
+    background: #39b269!important
+    border-color: #39b269!important
+
+.btn-primary
+  background: $main
+  border-color: $main
+  &:hover
+    background: lighten( $main, 10% )
+    border-color: lighten( $main, 10% )
+  &:active
+    background: darken( $main, 10% )
+    border-color: darken( $main, 10% )
+  &:active:focus
+    background: darken( $main, 10% )!important
+    border-color: darken( $main, 10% )!important
+
+a
+  &:focus
+    color: #00a9e3
+  &:hover
+    color: #333
+    outline: none
+    text-decoration: none
+  &:active, &:focus
+    outline: none
+    text-decoration: none
+
+h2
+  font-size: 40px
+  font-weight: 400
+  margin-bottom: 30px
+  margin-top: 0
+
+h3
+  font-size: 24px
+  font-weight: 400
+  margin-bottom: 20px
+
+h4
+  font-size: 21px
+  font-weight: 400
+  margin-bottom: 20px
+
+h5
+  font-size: 18px
+  font-weight: 600
+  margin-bottom: 20px
+
+p
+  line-height: 1.8
+  margin-bottom: 20px
+  color: #696f7c
+
+.container-fluid
+  padding-left: 80px
+  padding-right: 80px
+
+.row-padding-60
+  margin-left: -60px
+  margin-right: -60px
+  > div
+    padding-left: 60px
+    padding-right: 60px
+
+.row-padding-10
+  margin-left: -10px
+  margin-right: -10px
+  > li,
+  > div
+    padding-left: 10px
+    padding-right: 10px
+
+.row-padding-5
+  margin-left: -5px
+  margin-right: -5px
+  > li,
+  > div
+    padding-left: 5px
+    padding-right: 5px
+
+.close
+  font-size: 36px
+  color: #FFF
+  font-weight: 300
+  text-shadow: none
+
+.mb-15
+  margin-bottom: 15px
+
+.mb-20
+  margin-bottom: 20px !important
+
+.row-padding-0
+  margin: 0 !important
+  & > div
+    padding: 0 !important
+
+.opacity-50
+  opacity: 0.6
+
+.form-group-sm
+  margin-bottom: 10px

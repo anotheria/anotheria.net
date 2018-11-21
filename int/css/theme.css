@@ -1,115 +1,87 @@
-html,
+html {
+  height: 100%; }
+
 body {
   height: 100%;
-}
-
-body {
   background: #FFF;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 15px;
-  color: #444;
-}
-
-body.admin .main {
-  padding-bottom: 90px;
-}
+  color: #444; }
+  body.admin .main {
+    padding-bottom: 90px; }
 
 .wrapper {
   min-height: 100%;
-  position: relative;
-}
+  position: relative; }
 
 .container-lg {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 15px;
-}
+  padding: 0 15px; }
 
 .container-feed {
   max-width: inherit;
-  padding-left: 200px;
-}
+  padding-left: 200px; }
 
 a {
   color: #00a9e3;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-}
+  transition: all 0.1s linear; }
+  a.more {
+    color: #999; }
 
-a.more {
-  color: #999;
-}
-
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus {
-  outline: none;
-}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none; }
 
 a:focus {
-  color: #00a9e3;
-}
-
+  color: #00a9e3; }
 a:hover {
   color: #333;
   outline: none;
-  text-decoration: none;
-}
-
-a:active,
-a:focus {
+  text-decoration: none; }
+a:active, a:focus {
   outline: none;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 h2 {
   font-size: 40px;
   font-weight: 300;
   margin-bottom: 50px;
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 h3 {
   font-size: 24px;
   font-weight: 300;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 p {
-  line-height: 1.8;
-}
+  line-height: 1.8; }
 
 .container-fluid {
   padding-left: 80px;
-  padding-right: 80px;
-}
+  padding-right: 80px; }
 
 .row-padding-60 {
   margin-left: -60px;
-  margin-right: -60px;
-}
-
-.row-padding-60 > div {
-  padding-left: 60px;
-  padding-right: 60px;
-}
+  margin-right: -60px; }
+  .row-padding-60 > div {
+    padding-left: 60px;
+    padding-right: 60px; }
 
 .row-padding-10 {
   margin-left: -10px;
-  margin-right: -10px;
-}
-
-.row-padding-10 > li {
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  margin-right: -10px; }
+  .row-padding-10 > li {
+    padding-left: 10px;
+    padding-right: 10px; }
 
 .close {
   font-size: 36px;
   color: #FFF;
   font-weight: 300;
-  text-shadow: none;
-}
+  text-shadow: none; }
+
+/*# sourceMappingURL=theme.css.map */
