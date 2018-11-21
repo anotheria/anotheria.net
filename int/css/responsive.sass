@@ -94,7 +94,28 @@
     #header
         position: absolute !important
 
+    .half-box
+        min-height: 300px
+        row
+            justify-content: center
+
+    .product-box
+        padding-top: 30px
+        padding-bottom: 30px
+        display: block
+
+    .half-box-img
+        min-height: 300px
+
+@media (max-width: 767px)
+
     .half-box-img
         display: none
 
-@media (max-width: 767px)
+    .half-box
+        min-height: inherit
+
+    .product-box
+        padding-top: 0
+        padding-bottom: 0
+        display: block
